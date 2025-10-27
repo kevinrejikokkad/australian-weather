@@ -23,7 +23,7 @@ scatter_plot =
   geom_point(color = "red") +
   
   labs(title = "test")+
-  theme_minimal()
+  theme_minimal() + facet_wrap(~WindDir9am)
 
 # Save the plot in graphics/
 ggsave(filename = "graphics/scatter-temp-humidity.png", plot = scatter_plot)
