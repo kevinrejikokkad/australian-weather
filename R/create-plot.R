@@ -20,7 +20,7 @@ scatter_plot =
   
   ggplot(aes(x = Temp9am, y = Humidity9am)) + 
   
-  geom_point(color = "red") +
+  geom_point(color = "orange") +
   
   labs(title = "test")+
   theme_minimal() + facet_wrap(~WindDir9am)
